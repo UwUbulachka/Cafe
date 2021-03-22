@@ -4,33 +4,40 @@
   <% @foods.each do |f| %>
 
     <div class="col-md-2">
-      
-       <div class="border border-warning" >
-         
-          <div>
-           <%= f.title %> 
-          </div>
-      <br/>
-      
-          <div>
-            <img src=" <%= f.path_to_image %>" width="150"  height="100"/>
-          </div>
-    
-          <div>
-           <%= f.description %>
-          </div>
-    
-          <div>
-           <%= f.size %> гр
-         </div>
+        
+       <div class="border border-success" > 
+        
+            <div>
+             <%= f.title %> 
+            </div>
+          
+           </div>
 
-          <div>
-           <%= f.price %> руб
+      <div class="border border-warning" >
+         
+            <div>
+              <img src=" <%= f.path_to_image %>" width="150"  height="100"/>
+            </div>
+      
+            <div>
+             <%= f.description %>
+            </div>
+      
+            <div>
+             <%= f.size %> гр
+            </div>
+
+            <div>
+             <%= f.price %> руб
+            </div>
+          
+       </div>
+         <br/>
+      
+       <div>
+          <button type="submit" class="btn btn-success" onclick="">Clik</button> 
         </div>
-       
-      </div>
-      <br/>
-      <br/>
+  
   </div>
   <%end%>
 </div>

@@ -2,7 +2,7 @@ class AddFoods < ActiveRecord::Migration[5.2]
   def change
      Food.create ({
       :title => 'Бургер',
-      :description => 'Невероятно вкусный бургер',
+      :description => 'Вкусный бургер',
       :price => 125,
       :size => 200,
       :burger => false,
@@ -11,7 +11,7 @@ class AddFoods < ActiveRecord::Migration[5.2]
 
 Food.create ({
       :title => 'Картошка frie',
-      :description => 'Самый хрустящий картофель',
+      :description => 'Картофель',
       :price => 70,
       :size => 100,
       :fries => false,
@@ -20,7 +20,7 @@ Food.create ({
 
 Food.create ({
       :title => 'Нагетсы',
-      :description => 'Лучшие сочные нагетсы',
+      :description => 'Сочные нагетсы',
       :price => 100,
       :size => 150,
       :nuggets => false,
