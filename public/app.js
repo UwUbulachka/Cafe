@@ -7,7 +7,27 @@ function add_to_cart(id)
 	var x = window.localStorage.getItem(key);
 	x = x * 1 + 1;
 	window.localStorage.setItem(key, x);
+
+	update_orders_input();
+	update_orders_button();
 }
+
+// добовляет в input строку product_ = ..., для отправки данных
+
+function update_orders_input()
+{
+	var orders = cart_get_orders(); // к orders присваивается функция cart_get_orders()
+	$('#orders_input').val(orders);// к id добовляеться значение orders
+}
+
+// добовляет в  button общее кол во продуктов в корзину 
+
+function update_orders_button()
+{
+	var text =  'В корзине (' + cart_get_number_of_items() + ')'; 
+	$('#orders_button').val(text);// / к id добовляеться значение text
+}
+
 
 // подсчет товаров в корзине
 
